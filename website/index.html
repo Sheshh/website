@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Shesh's Sample</title>
+</head>
+<body>
+    <aside>
+<figure>
+     <div id="avatar"></div>
+        <figcaption> Shesh's Site</figcaption>
+</figure>
+<img src="images/Menu.svg">
+<nav>
+    ,<ul>
+        <li> <a href="http://127.0.0.1:5500">Home</a> </li>
+        <li> <a href="https://www.instagram.com/23shesh/">Instagram</a> </li>
+        <li> <a href="https://pastebin.com/bJtf6S0v">Socials</a> </li>
+        <li> <a href="https://cutt.ly/myEzVhJ">Contact</a> </li>
+    </ul>
+</nav>
+
+    </aside>
+    <main>
+<h1>Welcome</h1>
+<p>Thank you for visiting this link. This is a sample website 
+    created by myself as a  reference point for future projects 
+    that will be carried out. </p>
+    <a href="https://pastebin.com/bJtf6S0v" class= cta>MY SOCIALS</a>
+    </main>
+    <script>
+        (function{
+            var menu = document.querySelector('ul')
+            menulink = document.querySelector('img');
+            menulink.addEventListener('click', function(e) {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+    </script>
+</body>
+</html>
